@@ -1,0 +1,68 @@
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60vw;
+    height: 55px;
+    border-style: double;
+    border-color: white;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.356);
+    padding: 10px;
+    margin-block: 10px;
+    justify-self: center;
+    font-size: 18px;
+    box-sizing: border-box;
+    margin-left: -60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideUpFadeIn 0.4s ease forwards;
+}
+
+.todo-item .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.todo-item span.checked {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.todo-item span.text {
+    text-align: left;
+}
+
+.todo-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: rgb(15, 172, 42);
+}
+
+.todo-item button {
+    background-color: rgb(15, 172, 42);
+    color: whitesmoke;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* TodoBase */
+p {
+    text-align: center;
+}
+
+/* 애니메이션 적용 */
+@keyframes slideUpFadeIn {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
